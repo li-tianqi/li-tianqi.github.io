@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-25T15:58:57+08:00</updated><id>http://localhost:4000/</id><title type="html">Victor’s Blog</title><subtitle>This is Victor's blog.</subtitle><author><name>Victor LI</name></author><entry><title type="html">Test</title><link href="http://localhost:4000/test/2017/08/14/test/" rel="alternate" type="text/html" title="Test" /><published>2017-08-14T00:00:00+08:00</published><updated>2017-08-14T00:00:00+08:00</updated><id>http://localhost:4000/test/2017/08/14/test</id><content type="html" xml:base="http://localhost:4000/test/2017/08/14/test/">&lt;p&gt;用于测试&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="/atom.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-09-01T11:25:11+08:00</updated><id>/</id><title type="html">Victor’s Blog</title><subtitle>This is Victor's blog.</subtitle><author><name>Victor LI</name></author><entry><title type="html">Test</title><link href="/test/2017/08/14/test/" rel="alternate" type="text/html" title="Test" /><published>2017-08-14T00:00:00+08:00</published><updated>2017-08-14T00:00:00+08:00</updated><id>/test/2017/08/14/test</id><content type="html" xml:base="/test/2017/08/14/test/">&lt;p&gt;用于测试&lt;br /&gt;
 到这里是摘要。&lt;/p&gt;
 
 &lt;!--more--&gt;
@@ -51,7 +51,7 @@
 
 &lt;h3 id=&quot;另一个一级标题&quot;&gt;另一个一级标题&lt;/h3&gt;
 
-&lt;p&gt;new test&lt;/p&gt;</content><author><name>Victor LI</name></author><summary type="html">用于测试 到这里是摘要。</summary></entry><entry><title type="html">Python虚拟环境</title><link href="http://localhost:4000/ubuntu/python/tutorial/2017/08/11/virtualenv/" rel="alternate" type="text/html" title="Python虚拟环境" /><published>2017-08-11T00:00:00+08:00</published><updated>2017-08-11T00:00:00+08:00</updated><id>http://localhost:4000/ubuntu/python/tutorial/2017/08/11/virtualenv</id><content type="html" xml:base="http://localhost:4000/ubuntu/python/tutorial/2017/08/11/virtualenv/">&lt;h2 id=&quot;安装virtualenv&quot;&gt;安装virtualenv&lt;/h2&gt;
+&lt;p&gt;new test&lt;/p&gt;</content><author><name>Victor LI</name></author><summary type="html">用于测试 到这里是摘要。</summary></entry><entry><title type="html">Python虚拟环境</title><link href="/ubuntu/python/tutorial/2017/08/11/virtualenv/" rel="alternate" type="text/html" title="Python虚拟环境" /><published>2017-08-11T00:00:00+08:00</published><updated>2017-08-11T00:00:00+08:00</updated><id>/ubuntu/python/tutorial/2017/08/11/virtualenv</id><content type="html" xml:base="/ubuntu/python/tutorial/2017/08/11/virtualenv/">&lt;h2 id=&quot;安装virtualenv&quot;&gt;安装virtualenv&lt;/h2&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ pip install virtualenv
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -74,7 +74,7 @@
 &lt;h2 id=&quot;删除环境&quot;&gt;删除环境&lt;/h2&gt;
 &lt;blockquote&gt;
   &lt;p&gt;删除对应文件夹&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Victor LI</name></author><category term="python3" /><summary type="html">安装virtualenv $ pip install virtualenv 创建环境 $ virtualenv venv_name 激活环境 $ source venv_name/bin/activate 退出环境 $ deactivate 删除环境 删除对应文件夹</summary></entry><entry><title type="html">Ubuntu搭建jekyll环境</title><link href="http://localhost:4000/ubuntu/web/2017/08/11/build-jekyll-in-ubuntu/" rel="alternate" type="text/html" title="Ubuntu搭建jekyll环境" /><published>2017-08-11T00:00:00+08:00</published><updated>2017-08-11T00:00:00+08:00</updated><id>http://localhost:4000/ubuntu/web/2017/08/11/build-jekyll-in-ubuntu</id><content type="html" xml:base="http://localhost:4000/ubuntu/web/2017/08/11/build-jekyll-in-ubuntu/">&lt;p&gt;jekyll环境搭建&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Victor LI</name></author><category term="python3" /><summary type="html">安装virtualenv $ pip install virtualenv 创建环境 $ virtualenv venv_name 激活环境 $ source venv_name/bin/activate 退出环境 $ deactivate 删除环境 删除对应文件夹</summary></entry><entry><title type="html">Ubuntu搭建jekyll环境</title><link href="/ubuntu/web/2017/08/11/build-jekyll-in-ubuntu/" rel="alternate" type="text/html" title="Ubuntu搭建jekyll环境" /><published>2017-08-11T00:00:00+08:00</published><updated>2017-08-11T00:00:00+08:00</updated><id>/ubuntu/web/2017/08/11/build-jekyll-in-ubuntu</id><content type="html" xml:base="/ubuntu/web/2017/08/11/build-jekyll-in-ubuntu/">&lt;p&gt;jekyll环境搭建&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -125,7 +125,7 @@ $ sudo gem install bundler
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
 $ jekyll serve
 &lt;/code&gt;
-浏览器输入&lt;code class=&quot;highlighter-rouge&quot;&gt;127.0.0.1:4000&lt;/code&gt;&lt;/p&gt;</content><author><name>Victor LI</name></author><category term="jekyll" /><summary type="html">jekyll环境搭建</summary></entry><entry><title type="html">MySQL命令</title><link href="http://localhost:4000/database/2017/08/04/mysql-command/" rel="alternate" type="text/html" title="MySQL命令" /><published>2017-08-04T00:00:00+08:00</published><updated>2017-08-04T00:00:00+08:00</updated><id>http://localhost:4000/database/2017/08/04/mysql-command</id><content type="html" xml:base="http://localhost:4000/database/2017/08/04/mysql-command/">&lt;p&gt;记录mysql命令&lt;/p&gt;
+浏览器输入&lt;code class=&quot;highlighter-rouge&quot;&gt;127.0.0.1:4000&lt;/code&gt;&lt;/p&gt;</content><author><name>Victor LI</name></author><category term="jekyll" /><summary type="html">jekyll环境搭建</summary></entry><entry><title type="html">MySQL命令</title><link href="/database/2017/08/04/mysql-command/" rel="alternate" type="text/html" title="MySQL命令" /><published>2017-08-04T00:00:00+08:00</published><updated>2017-08-04T00:00:00+08:00</updated><id>/database/2017/08/04/mysql-command</id><content type="html" xml:base="/database/2017/08/04/mysql-command/">&lt;p&gt;记录mysql命令&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -173,7 +173,7 @@ default-character-set=utf8
       &lt;/div&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Victor LI</name></author><category term="mysql" /><summary type="html">记录mysql命令</summary></entry><entry><title type="html">Jumpserver</title><link href="http://localhost:4000/2017/08/04/jumpserver/" rel="alternate" type="text/html" title="Jumpserver" /><published>2017-08-04T00:00:00+08:00</published><updated>2017-08-04T00:00:00+08:00</updated><id>http://localhost:4000/2017/08/04/jumpserver</id><content type="html" xml:base="http://localhost:4000/2017/08/04/jumpserver/"></content><author><name>Victor LI</name></author><summary type="html"></summary></entry><entry><title type="html">解决每次git push都要输入用户密码的问题</title><link href="http://localhost:4000/tutorial/2017/08/04/git-push-https-to-ssh/" rel="alternate" type="text/html" title="解决每次git push都要输入用户密码的问题" /><published>2017-08-04T00:00:00+08:00</published><updated>2017-08-04T00:00:00+08:00</updated><id>http://localhost:4000/tutorial/2017/08/04/git-push-https-to-ssh</id><content type="html" xml:base="http://localhost:4000/tutorial/2017/08/04/git-push-https-to-ssh/">&lt;h2 id=&quot;解决每次git-push都要输入用户密码的问题&quot;&gt;解决每次git push都要输入用户密码的问题&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name>Victor LI</name></author><category term="mysql" /><summary type="html">记录mysql命令</summary></entry><entry><title type="html">Jumpserver</title><link href="/2017/08/04/jumpserver/" rel="alternate" type="text/html" title="Jumpserver" /><published>2017-08-04T00:00:00+08:00</published><updated>2017-08-04T00:00:00+08:00</updated><id>/2017/08/04/jumpserver</id><content type="html" xml:base="/2017/08/04/jumpserver/"></content><author><name>Victor LI</name></author><summary type="html"></summary></entry><entry><title type="html">解决每次git push都要输入用户密码的问题</title><link href="/tutorial/2017/08/04/git-push-https-to-ssh/" rel="alternate" type="text/html" title="解决每次git push都要输入用户密码的问题" /><published>2017-08-04T00:00:00+08:00</published><updated>2017-08-04T00:00:00+08:00</updated><id>/tutorial/2017/08/04/git-push-https-to-ssh</id><content type="html" xml:base="/tutorial/2017/08/04/git-push-https-to-ssh/">&lt;h2 id=&quot;解决每次git-push都要输入用户密码的问题&quot;&gt;解决每次git push都要输入用户密码的问题&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;问题原因：&lt;/strong&gt;
 连接远程仓库时用的https方式而不是ssh方式。&lt;/p&gt;
@@ -226,14 +226,14 @@ Permission denied (publickey).
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;em&gt;注：不同用户的公私钥是独立的，包括root用户和普通用户，所以添加普通用户的公钥后，root用户还是无法正常用SSH的，还需单独添加。&lt;/em&gt;&lt;/p&gt;</content><author><name>Victor LI</name></author><category term="github" /><summary type="html">解决每次git push都要输入用户密码的问题 问题原因： 连接远程仓库时用的https方式而不是ssh方式。 解决方法： 改成ssh方式</summary></entry><entry><title type="html">Use Markdown</title><link href="http://localhost:4000/test/2017/08/03/markdown-test/" rel="alternate" type="text/html" title="Use Markdown" /><published>2017-08-03T00:00:00+08:00</published><updated>2017-08-03T00:00:00+08:00</updated><id>http://localhost:4000/test/2017/08/03/markdown-test</id><content type="html" xml:base="http://localhost:4000/test/2017/08/03/markdown-test/">&lt;h2 id=&quot;why-markdown&quot;&gt;Why Markdown&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;注：不同用户的公私钥是独立的，包括root用户和普通用户，所以添加普通用户的公钥后，root用户还是无法正常用SSH的，还需单独添加。&lt;/em&gt;&lt;/p&gt;</content><author><name>Victor LI</name></author><category term="github" /><summary type="html">解决每次git push都要输入用户密码的问题 问题原因： 连接远程仓库时用的https方式而不是ssh方式。 解决方法： 改成ssh方式</summary></entry><entry><title type="html">Use Markdown</title><link href="/test/2017/08/03/markdown-test/" rel="alternate" type="text/html" title="Use Markdown" /><published>2017-08-03T00:00:00+08:00</published><updated>2017-08-03T00:00:00+08:00</updated><id>/test/2017/08/03/markdown-test</id><content type="html" xml:base="/test/2017/08/03/markdown-test/">&lt;h2 id=&quot;why-markdown&quot;&gt;Why Markdown&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;look good&lt;/li&gt;
   &lt;li&gt;why not&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;how-to-use&quot;&gt;How to use&lt;/h2&gt;</content><author><name>Victor LI</name></author><category term="markdown" /><summary type="html">Why Markdown</summary></entry><entry><title type="html">Ubuntu中安装Django</title><link href="http://localhost:4000/tutorial/web/python/2017/08/03/install-django-in-ubuntu/" rel="alternate" type="text/html" title="Ubuntu中安装Django" /><published>2017-08-03T00:00:00+08:00</published><updated>2017-08-03T00:00:00+08:00</updated><id>http://localhost:4000/tutorial/web/python/2017/08/03/install-django-in-ubuntu</id><content type="html" xml:base="http://localhost:4000/tutorial/web/python/2017/08/03/install-django-in-ubuntu/">&lt;h2&gt;Ubuntu中安装Django&lt;/h2&gt;
+&lt;h2 id=&quot;how-to-use&quot;&gt;How to use&lt;/h2&gt;</content><author><name>Victor LI</name></author><category term="markdown" /><summary type="html">Why Markdown</summary></entry><entry><title type="html">Ubuntu中安装Django</title><link href="/tutorial/web/python/2017/08/03/install-django-in-ubuntu/" rel="alternate" type="text/html" title="Ubuntu中安装Django" /><published>2017-08-03T00:00:00+08:00</published><updated>2017-08-03T00:00:00+08:00</updated><id>/tutorial/web/python/2017/08/03/install-django-in-ubuntu</id><content type="html" xml:base="/tutorial/web/python/2017/08/03/install-django-in-ubuntu/">&lt;h2&gt;Ubuntu中安装Django&lt;/h2&gt;
 
 &lt;p&gt;
 平时习惯用python3，所以下面的安装过程都是基于python3&lt;br/&gt;
@@ -256,7 +256,7 @@ $ python3
 &gt;&gt;&gt; django.get_version()
 &lt;/pre&gt;
 显示Django版本表示正确安装
-&lt;/p&gt;</content><author><name>Victor LI</name></author><category term="github" /><category term="jekyll" /><category term="Django" /><category term="python3" /><summary type="html">Ubuntu中安装Django 平时习惯用python3，所以下面的安装过程都是基于python3</summary></entry><entry><title type="html">The tutorial of building a blog with Github Pages and Jekyll</title><link href="http://localhost:4000/tutorial/web/github/2017/08/02/the-tutorial-of-building-a-blog/" rel="alternate" type="text/html" title="The tutorial of building a blog with Github Pages and Jekyll" /><published>2017-08-02T00:00:00+08:00</published><updated>2017-08-02T00:00:00+08:00</updated><id>http://localhost:4000/tutorial/web/github/2017/08/02/the-tutorial-of-building-a-blog</id><content type="html" xml:base="http://localhost:4000/tutorial/web/github/2017/08/02/the-tutorial-of-building-a-blog/">&lt;h2&gt;The tutorial of building a blog with Github Pages and Jekyll&lt;/h2&gt;
+&lt;/p&gt;</content><author><name>Victor LI</name></author><category term="github" /><category term="jekyll" /><category term="Django" /><category term="python3" /><summary type="html">Ubuntu中安装Django 平时习惯用python3，所以下面的安装过程都是基于python3</summary></entry><entry><title type="html">The tutorial of building a blog with Github Pages and Jekyll</title><link href="/tutorial/web/github/2017/08/02/the-tutorial-of-building-a-blog/" rel="alternate" type="text/html" title="The tutorial of building a blog with Github Pages and Jekyll" /><published>2017-08-02T00:00:00+08:00</published><updated>2017-08-02T00:00:00+08:00</updated><id>/tutorial/web/github/2017/08/02/the-tutorial-of-building-a-blog</id><content type="html" xml:base="/tutorial/web/github/2017/08/02/the-tutorial-of-building-a-blog/">&lt;h2&gt;The tutorial of building a blog with Github Pages and Jekyll&lt;/h2&gt;
 
 &lt;p&gt;
 Today I learn to build a blog with Github Pages and Jekyll. Here recommend two very good tutorials.
@@ -264,7 +264,7 @@ Today I learn to build a blog with Github Pages and Jekyll. Here recommend two v
 &lt;a href=&quot;http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html&quot; target=&quot;_blank&quot;&gt;http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html&lt;/a&gt;
 &lt;br/&gt;&lt;br/&gt;
 &lt;a href=&quot;http://blog.csdn.net/on_1y/article/details/19259435&quot; target=&quot;_blank&quot;&gt;http://blog.csdn.net/on_1y/article/details/19259435&lt;/a&gt;
-&lt;/p&gt;</content><author><name>Victor LI</name></author><category term="github" /><category term="jekyll" /><summary type="html">The tutorial of building a blog with Github Pages and Jekyll</summary></entry><entry><title type="html">Hello World!</title><link href="http://localhost:4000/test/2017/08/02/hello-world/" rel="alternate" type="text/html" title="Hello World!" /><published>2017-08-02T00:00:00+08:00</published><updated>2017-08-02T00:00:00+08:00</updated><id>http://localhost:4000/test/2017/08/02/hello-world</id><content type="html" xml:base="http://localhost:4000/test/2017/08/02/hello-world/">&lt;h2&gt;Hello World!&lt;/h2&gt;
+&lt;/p&gt;</content><author><name>Victor LI</name></author><category term="github" /><category term="jekyll" /><summary type="html">The tutorial of building a blog with Github Pages and Jekyll</summary></entry><entry><title type="html">Hello World!</title><link href="/test/2017/08/02/hello-world/" rel="alternate" type="text/html" title="Hello World!" /><published>2017-08-02T00:00:00+08:00</published><updated>2017-08-02T00:00:00+08:00</updated><id>/test/2017/08/02/hello-world</id><content type="html" xml:base="/test/2017/08/02/hello-world/">&lt;h2&gt;Hello World!&lt;/h2&gt;
 
 &lt;p&gt;My first article&lt;/p&gt;
 
