@@ -168,10 +168,10 @@ echo "push done"
 echo "*********************************************************"
 
 echo "copy _site to master..."
-cp -r _site/ ../tmp/
+cp -rf _site/ ../tmp/
 git checkout master
-rm -r ./*
-cp -r ../tmp/_site/* ./
+#rm -r ./*
+cp -rf ../tmp/_site/* ./
 git add .
 git commit -m "deploy blog"
 git push origin master
