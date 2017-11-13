@@ -70,7 +70,7 @@
   
     
     
-    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Titillium Web:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Titillium Web:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -115,7 +115,7 @@
 <meta name="keywords" content="python3, Django">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Django学习记录">
-<meta property="og:url" content="/python/web/2017/08/15/django-practice/">
+<meta property="og:url" content="http://localhost:4000/python/web/2017/08/15/django-practice/">
 <meta property="og:site_name" content="Victor's Blog">
 <meta property="og:description" content="做一个小工具要用到Django，简单熟悉一下Django创建项目的流程并记录一些需要注意的地方，之前已经搭建过Django开发环境，所以跳过这步。 直接从建立项目开始。">
 <meta property="og:locale" content="zh-Hans">
@@ -148,7 +148,7 @@
 
 
 
-  <link rel="canonical" href=""/>
+  <link rel="canonical" href="http://localhost:4000/"/>
 
 
 
@@ -281,6 +281,8 @@
           <div id="content" class="content">
             
 
+
+
 <div id="posts" class="posts-expand">
   
   
@@ -292,7 +294,7 @@
   
 
   <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="/python/web/2017/08/15/django-practice/">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/python/web/2017/08/15/django-practice/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Victor LI">
@@ -412,18 +414,16 @@
 <h3 id="入门练习">入门练习</h3>
 
 <h4 id="1-新建项目">1. 新建项目：</h4>
-<div class="highlighter-rouge"><pre class="highlight"><code>$ django-admin.py startproject Demo
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ django-admin.py startproject Demo
+</code></pre></div></div>
 
 <h4 id="2-新建app">2. 新建app：</h4>
-<div class="highlighter-rouge"><pre class="highlight"><code>cd Demo
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd Demo
 $ python3 manage.py startapp Hello
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h4 id="3-项目目录结构">3. 项目目录结构：</h4>
-<div class="highlighter-rouge"><pre class="highlight"><code>.
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.
 ├── Hello
 │   ├── admin.py
 │   ├── apps.py
@@ -445,8 +445,7 @@ $ python3 manage.py startapp Hello
 
 4 directories, 14 files
 
-</code></pre>
-</div>
+</code></pre></div></div>
 <blockquote>
   <p>urls.py<br />
 链接入口，关联到对应的 views.py 中的一个函数（或者乘坐 generic 类），访问的链接就对应一个函数。<br />
@@ -467,7 +466,7 @@ views.py 中的函数渲染 templates 中的 html 模板，得到动态内容的
 </blockquote>
 
 <h4 id="4-编辑viewspy文件">4. 编辑views.py文件：</h4>
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># coding: utf-8</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># coding: utf-8</span>
 <span class="kn">from</span> <span class="nn">django.shortcuts</span> <span class="kn">import</span> <span class="n">render</span>
 <span class="kn">from</span> <span class="nn">django.http</span> <span class="kn">import</span> <span class="n">HttpResponse</span>
 
@@ -475,11 +474,10 @@ views.py 中的函数渲染 templates 中的 html 模板，得到动态内容的
 
 <span class="k">def</span> <span class="nf">index</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">HttpResponse</span><span class="p">(</span><span class="s">u'Hello World'</span><span class="p">)</span>  <span class="c"># u'string' means unicode</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h4 id="5-在settingspy中添加app">5. 在settings.py中添加app:</h4>
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">(</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">(</span>
     <span class="s">'django.contrib.admin'</span><span class="p">,</span>
     <span class="s">'django.contrib.auth'</span><span class="p">,</span>
     <span class="s">'django.contrib.contenttypes'</span><span class="p">,</span>
@@ -488,11 +486,10 @@ views.py 中的函数渲染 templates 中的 html 模板，得到动态内容的
     <span class="s">'django.contrib.staticfiles'</span><span class="p">,</span>
     <span class="s">'Hello'</span><span class="p">,</span>
 <span class="p">)</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h4 id="6-配置urlurlspy">6. 配置URL（urls.py）</h4>
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">django.conf.urls</span> <span class="kn">import</span> <span class="n">include</span><span class="p">,</span> <span class="n">url</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">django.conf.urls</span> <span class="kn">import</span> <span class="n">include</span><span class="p">,</span> <span class="n">url</span>
 
 <span class="kn">from</span> <span class="nn">django.contrib</span> <span class="kn">import</span> <span class="n">admin</span>
 <span class="kn">from</span> <span class="nn">Hello</span> <span class="kn">import</span> <span class="n">views</span> <span class="k">as</span> <span class="n">Hello_views</span>
@@ -507,18 +504,16 @@ views.py 中的函数渲染 templates 中的 html 模板，得到动态内容的
     <span class="n">url</span><span class="p">(</span><span class="s">r'^admin/'</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">urls</span><span class="p">)),</span>
     <span class="n">url</span><span class="p">(</span><span class="s">r'^index'</span><span class="p">,</span> <span class="n">Hello_views</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
 <span class="p">]</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h4 id="7-测试">7. 测试：</h4>
-<div class="highlighter-rouge"><pre class="highlight"><code>$ python3 manage.py runserver 8080
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python3 manage.py runserver 8080
+</code></pre></div></div>
 
 <p>浏览器127.0.0.1:8080/index/</p>
 
 <h4 id="8-get方法传递参数实现加法">8. GET方法传递参数实现加法</h4>
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">django.shortcuts</span> <span class="kn">import</span> <span class="n">render</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">django.shortcuts</span> <span class="kn">import</span> <span class="n">render</span>
 <span class="kn">from</span> <span class="nn">django.http</span> <span class="kn">import</span> <span class="n">HttpResponse</span>
 
 <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
@@ -537,22 +532,19 @@ views.py 中的函数渲染 templates 中的 html 模板，得到动态内容的
 <span class="c"># 加 url(r'^add/(\d+)/(\d+)/$', calc_views.add2, name='add2')</span>
 <span class="c"># 127.0.0.1:8080/add/3/4 </span>
 	
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h4 id="9-添加模板文件">9. 添加模板文件</h4>
 <p><strong>views.py添加home方法</strong></p>
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">home</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">home</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="s">'home.html'</span><span class="p">)</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong>在对应app目录建立templates文件夹并添加home.html文件</strong></p>
 
 <p><strong>配置路由</strong></p>
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">url</span><span class="p">(</span><span class="s">r'^home/'</span><span class="p">,</span> <span class="n">Hello_views</span><span class="o">.</span><span class="n">home</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">'home'</span><span class="p">),</span>
-</code></pre>
-</div>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">url</span><span class="p">(</span><span class="s">r'^home/'</span><span class="p">,</span> <span class="n">Hello_views</span><span class="o">.</span><span class="n">home</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">'home'</span><span class="p">),</span>
+</code></pre></div></div>
 
 <p><strong>测试</strong></p>
 <blockquote>
@@ -564,7 +556,7 @@ views.py 中的函数渲染 templates 中的 html 模板，得到动态内容的
   <p>在settings中加上</p>
 </blockquote>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">TEMPLATES</span> <span class="o">=</span> <span class="p">[</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">TEMPLATES</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">{</span>
         <span class="s">'BACKEND'</span><span class="p">:</span> <span class="s">'django.template.backends.django.DjangoTemplates'</span><span class="p">,</span>
         <span class="s">'DIRS'</span><span class="p">:</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">BASE_DIR</span><span class="p">,</span> <span class="s">'templates'</span><span class="p">)],</span>
@@ -578,8 +570,7 @@ views.py 中的函数渲染 templates 中的 html 模板，得到动态内容的
             <span class="p">],</span>
         <span class="p">},</span>
     <span class="p">},</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong>再次测试提示警告</strong></p>
 <blockquote>
@@ -588,7 +579,7 @@ views.py 中的函数渲染 templates 中的 html 模板，得到动态内容的
 </blockquote>
 
 <p>在settings中将TEMPLATE_开头的项都移到TEMPLATES中</p>
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">TEMPLATES</span> <span class="o">=</span> <span class="p">[</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">TEMPLATES</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">{</span>
         <span class="s">'BACKEND'</span><span class="p">:</span> <span class="s">'django.template.backends.django.DjangoTemplates'</span><span class="p">,</span>
         <span class="s">'DIRS'</span><span class="p">:</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">BASE_DIR</span><span class="p">,</span> <span class="s">'templates'</span><span class="p">)],</span>
@@ -604,13 +595,12 @@ views.py 中的函数渲染 templates 中的 html 模板，得到动态内容的
         <span class="p">},</span>
     <span class="p">},</span>
 <span class="p">]</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h4 id="10-模型与数据库">10. 模型与数据库</h4>
 <p><strong>在模型中定义数据库结构</strong><br />
 app目录下的models.py</p>
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">django.db</span> <span class="kn">import</span> <span class="n">models</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">django.db</span> <span class="kn">import</span> <span class="n">models</span>
 
 <span class="k">class</span> <span class="nc">Person</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
     <span class="n">name</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
@@ -620,18 +610,16 @@ app目录下的models.py</p>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
 		
 	<span class="c"># 定义Person类，继承自models.Model</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong>执行同步数据库操作</strong></p>
-<div class="highlighter-rouge"><pre class="highlight"><code>$ python3 manage.py makemigrations
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python3 manage.py makemigrations
 $ python3 manage.py migrate
 # 这里用默认的sqlites数据库，无需其他操作
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong>使用数据库测试</strong></p>
-<div class="highlighter-rouge"><pre class="highlight"><code>$ python3 manage.py shell
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python3 manage.py shell
 &gt;&gt;&gt; from Hello.models import Person
 &gt;&gt;&gt; Person.objects.create(name="LI", age=23)
 &lt;Person: Person object&gt;
@@ -641,11 +629,10 @@ $ python3 manage.py migrate
 
 &gt;&gt;&gt; Person.objects.get(name="LI")
 &lt;Person: LI&gt;  # 此为加了__str__方法时的返回结果
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong>其他操作</strong></p>
-<div class="highlighter-rouge"><pre class="highlight"><code># 增操作
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 增操作
 # 1
 Person.objects.create(name = name, age = age)
 
@@ -695,8 +682,7 @@ Person.objects.exclude(name__contains = "WZ")
 
 # 11. 找出名称含有abc, 但是排除年龄是23岁的
 Person.objects.filter(name__contains="abc").exclude(age = 23)
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong>总结使用数据库的方法</strong></p>
 <ul>
@@ -709,7 +695,7 @@ Person.objects.filter(name__contains="abc").exclude(age = 23)
 <p><strong>GET方法提交表单</strong><br />
 <em>实现计算a+b和</em><br />
 在对应app下添加模板index.html文件</p>
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;body&gt;</span>
 <span class="nt">&lt;p&gt;</span>Please input 2 numbers:<span class="nt">&lt;/p&gt;</span>
@@ -724,11 +710,10 @@ Person.objects.filter(name__contains="abc").exclude(age = 23)
 
 <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>views.py</p>
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">django.http</span> <span class="kn">import</span> <span class="n">HttpResponse</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">django.http</span> <span class="kn">import</span> <span class="n">HttpResponse</span>
 <span class="kn">from</span> <span class="nn">django.shortcuts</span> <span class="kn">import</span> <span class="n">render</span>
 
 <span class="k">def</span> <span class="nf">index</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
@@ -742,31 +727,28 @@ Person.objects.filter(name__contains="abc").exclude(age = 23)
     <span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
     <span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">HttpResponse</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">))</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>urls.py</p>
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
     <span class="n">url</span><span class="p">(</span><span class="s">r'^admin/'</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">urls</span><span class="p">)),</span>
     <span class="n">url</span><span class="p">(</span><span class="s">r'^index/'</span><span class="p">,</span> <span class="n">learn_views</span><span class="o">.</span><span class="n">index</span><span class="p">),</span>
 	<span class="c"># 表单页面</span>
     <span class="n">url</span><span class="p">(</span><span class="s">r'^add/$'</span><span class="p">,</span> <span class="n">learn_views</span><span class="o">.</span><span class="n">add</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">'add'</span><span class="p">),</span>
 	<span class="c"># 提交后的结果页面</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong>POST方式提交表单</strong><br />
 在对应app目录下新建forms.py</p>
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">django</span> <span class="kn">import</span> <span class="n">forms</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">django</span> <span class="kn">import</span> <span class="n">forms</span>
 
 <span class="k">class</span> <span class="nc">AddForm</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">Form</span><span class="p">):</span>
     <span class="n">a</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">IntegerField</span><span class="p">()</span>
     <span class="n">b</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">IntegerField</span><span class="p">()</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>views.py</p>
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">.forms</span> <span class="kn">import</span> <span class="n">AddForm</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">.forms</span> <span class="kn">import</span> <span class="n">AddForm</span>
 
 <span class="k">def</span> <span class="nf">index</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s">'POST'</span><span class="p">:</span>
@@ -783,12 +765,11 @@ Person.objects.filter(name__contains="abc").exclude(age = 23)
         <span class="n">form</span> <span class="o">=</span> <span class="n">AddForm</span><span class="p">()</span>
 
     <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="s">'index.html'</span><span class="p">,</span> <span class="p">{</span><span class="s">'form'</span><span class="p">:</span> <span class="n">form</span><span class="p">})</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>index.html</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -798,7 +779,8 @@ Person.objects.filter(name__contains="abc").exclude(age = 23)
 8
 9
 10
-11</pre></td><td class="code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+11
+</pre></td><td class="code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;body&gt;</span>
 <span class="nt">&lt;p&gt;</span>Please Input 2 numbers:<span class="nt">&lt;/p&gt;</span>
@@ -808,16 +790,14 @@ Person.objects.filter(name__contains="abc").exclude(age = 23)
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"submit"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
 <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<span class="nt">&lt;/html&gt;</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>urls.py</p>
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
     <span class="n">url</span><span class="p">(</span><span class="s">r'^admin/'</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">urls</span><span class="p">)),</span>
     <span class="n">url</span><span class="p">(</span><span class="s">r'^$'</span><span class="p">,</span> <span class="n">calc_views</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">'home'</span><span class="p">),</span>
 <span class="p">]</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
       
     </div>
@@ -867,14 +847,18 @@ Person.objects.filter(name__contains="abc").exclude(age = 23)
         <div class="post-nav" id="post-nav-id">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/ubuntu/shell/2017/09/01/shell-echo-color/" rel="next" title="shell输出彩色字符">
+                <i class="fa fa-chevron-left"></i> shell输出彩色字符
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/test/2017/08/14/test/" rel="prev" title="Test">
-                Test <i class="fa fa-chevron-right"></i>
+              <a href="/ubuntu/python/tutorial/2017/08/11/virtualenv/" rel="prev" title="Python虚拟环境">
+                Python虚拟环境 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -953,7 +937,7 @@ Person.objects.filter(name__contains="abc").exclude(age = 23)
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">26</span>
+                <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -964,7 +948,7 @@ Person.objects.filter(name__contains="abc").exclude(age = 23)
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
