@@ -121,34 +121,39 @@ edit_commit_message()
 
 
 
-git checkout source
+#git checkout master
 
-echo "*********************************************************"
+#echo "*********************************************************"
 
-echo "jekyll build..."
-bundle exec jekyll build
-echo "build done"
+#echo "jekyll build..."
+#bundle exec jekyll build
+#echo "build done"
 
 echo "*********************************************************"
 
 echo "git add ..."
-git add .
+git add -A
 echo "add done"
 
 echo -e "\n*********************************************************"
 
-while true
-do
-	edit_commit_message
-	echo "========================================"
-	echo -e "your message is: \n $message"
-	echo "go on? (y/n): "
-	read key4
-	if [ $key4=='y' ]
-	then
-		break
-	fi
-done
+if [ -n "$1" ]; then
+    message="feat($1): new post"
+    echo "message is: $message"
+else
+	while true
+	do
+		edit_commit_message
+		echo "========================================"
+		echo -e "your message is: \n $message"
+		echo "go on? (y/n): "
+		read key4
+		if [ $key4=='y' ]
+		then
+			break
+		fi
+	done
+fi
 
 echo "----------------------------------------"
 echo "edit message done"
@@ -162,21 +167,28 @@ echo "commit done"
 echo "*********************************************************"
 
 echo "git push ..."
-git push origin source
+git push origin gh-pages
 echo "push done"
 
 echo "*********************************************************"
+if false; then
+echo "copy _site to gh-pages..."
+if [ ! -x "../tmp/" ]; then
+    mkdir "../tmp/"
+fi
 
-echo "copy _site to master..."
 cp -r _site/ ../tmp/
-git checkout master
+git checkout gh-pages
 rm -r ./*
 cp -r ../tmp/_site/* ./
-git add .
+rm -r ../tmp/*
+
+git add -A
 git commit -m "deploy blog"
-git push origin master
-git checkout source
+git push origin gh-pages
+git checkout master
 
 echo "*********************************************************"
+fi
 
 echo "completed"

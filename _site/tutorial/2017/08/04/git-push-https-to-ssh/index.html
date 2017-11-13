@@ -70,7 +70,7 @@
   
     
     
-    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Titillium Web:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Titillium Web:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -115,7 +115,7 @@
 <meta name="keywords" content="github">
 <meta property="og:type" content="article">
 <meta property="og:title" content="解决每次git push都要输入用户密码的问题">
-<meta property="og:url" content="/tutorial/2017/08/04/git-push-https-to-ssh/">
+<meta property="og:url" content="http://localhost:4000/tutorial/2017/08/04/git-push-https-to-ssh/">
 <meta property="og:site_name" content="Victor's Blog">
 <meta property="og:description" content="解决每次git push都要输入用户密码的问题 问题原因： 连接远程仓库时用的https方式而不是ssh方式。 解决方法： 改成ssh方式">
 <meta property="og:locale" content="zh-Hans">
@@ -148,7 +148,7 @@
 
 
 
-  <link rel="canonical" href=""/>
+  <link rel="canonical" href="http://localhost:4000/"/>
 
 
 
@@ -281,6 +281,8 @@
           <div id="content" class="content">
             
 
+
+
 <div id="posts" class="posts-expand">
   
   
@@ -292,7 +294,7 @@
   
 
   <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="/tutorial/2017/08/04/git-push-https-to-ssh/">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/tutorial/2017/08/04/git-push-https-to-ssh/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Victor LI">
@@ -402,16 +404,14 @@
 
 <ol>
   <li>查看连接协议：
-    <div class="highlighter-rouge"><pre class="highlight"><code>$ git remote -v
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git remote -v
+</code></pre></div>    </div>
   </li>
   <li>改为ssh：
-    <div class="highlighter-rouge"><pre class="highlight"><code>$ git remote rm origin
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git remote rm origin
 $ git remote add origin git@github.com:li-tianqi/blog.git
 $ git push origin
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
 </ol>
 
@@ -423,15 +423,13 @@ Permission denied (publickey).
 
 <ol>
   <li>生成本机公私钥：
-    <div class="highlighter-rouge"><pre class="highlight"><code>$ ssh-keygen -t rsa
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ssh-keygen -t rsa
+</code></pre></div>    </div>
     <p><em>三次回车</em></p>
   </li>
   <li>查看公钥：
-    <div class="highlighter-rouge"><pre class="highlight"><code>$ cat ~/.ssh/id_rsa.pub
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat ~/.ssh/id_rsa.pub
+</code></pre></div>    </div>
   </li>
   <li>将公钥添加到github的ssh key:
     <ul>
@@ -490,8 +488,8 @@ Permission denied (publickey).
         <div class="post-nav" id="post-nav-id">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/04/jumpserver/" rel="next" title="Jumpserver">
-                <i class="fa fa-chevron-left"></i> Jumpserver
+              <a href="/database/2017/08/04/mysql-command/" rel="next" title="MySQL命令">
+                <i class="fa fa-chevron-left"></i> MySQL命令
               </a>
             
           </div>
@@ -500,8 +498,8 @@ Permission denied (publickey).
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/test/2017/08/03/markdown-test/" rel="prev" title="Use Markdown">
-                Use Markdown <i class="fa fa-chevron-right"></i>
+              <a href="/tutorial/web/python/2017/08/03/install-django-in-ubuntu/" rel="prev" title="Ubuntu中安装Django">
+                Ubuntu中安装Django <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -580,7 +578,7 @@ Permission denied (publickey).
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">26</span>
+                <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -591,7 +589,7 @@ Permission denied (publickey).
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
